@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <Authors>William Duan</Authors>
+    <Company>William Sharp C</Company>
+    <Product>Pay Slip Demo</Product>
+    <Copyright />
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\PayWay.Common\PayWay.Common\PayWay.Common.csproj" />
+  </ItemGroup>
+
+</Project>

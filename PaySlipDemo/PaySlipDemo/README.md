@@ -2,29 +2,29 @@
 This is startup or sprint 1 of a comprehensive payment system, currently it is to generate payslips, however the architecture solution is for continuous improvement and big ideas.
 
 # Installation process
-1. Extract the MYOB.zip into a folder, e.g. `c:\MYOB`
-2. Open Console (CLI), go to the folder, e.g. `c:\MYOB\App\bin`, run command:    
-`cd c:\MYOB\App\bin`
+1. Extract the BOYM.zip into a folder, e.g. `c:\BOYM`
+2. Open Console (CLI), go to the folder, e.g. `c:\BOYM\App\bin`, run command:    
+`cd c:\BOYM\App\bin`
 3. Run command:  
 `dotnet PaySlipDemo.dll`
 
 # Continuous development in Visual Studio
-* Open solution file `c:\MYOB\PaySlipDemo\PaySlipDemo.sln`
+* Open solution file `c:\BOYM\PaySlipDemo\PaySlipDemo.sln`
 * Use Nuget package manager to install dependencies
-* Rebuild and Run from Debug menu, and view the generated payslip file: `C:\MYOB\PaySlipDemo\PaySlipDemo\bin\Debug\netcoreapp2.1\Fixture\payslip_output.csv`
+* Rebuild and Run from Debug menu, and view the generated payslip file: `C:\BOYM\PaySlipDemo\PaySlipDemo\bin\Debug\netcoreapp2.1\Fixture\payslip_output.csv`
 * You can also run unit test from Test Explorer in VS
 
 # Resources & References:
 First of all, you don't need to do anything with the input CSV file and tax rates classification data, they are all self-contained into the project.
 
 However, if you want to change the input CSV data, or apply a new policy of tax rates, this is where they are: 
-* Input CSV file is together with project PayWay.Common: `C:\MYOB\PayWay.Common\PayWay.Common\Fixture\payway_source.csv`  
+* Input CSV file is together with project PayWay.Common: `C:\BOYM\PayWay.Common\PayWay.Common\Fixture\payway_source.csv`  
 (please be mindful to change CSV format as not every scenario is tested; super rate no need to enter percentage sign % for simplicity)
 
-* The SQLite DB file which contains Tax rates is: `C:\MYOB\PayWay.Common\PayWay.Common\Fixture\tax_rates.sqlite3`
+* The SQLite DB file which contains Tax rates is: `C:\BOYM\PayWay.Common\PayWay.Common\Fixture\tax_rates.sqlite3`
 
-* The DB script is: `C:\MYOB\PayWay.Common\PayWay.Common\Scripts\pay_way.sql`, 
-You can use it to modify tax ratesimprovement 
+* The DB script is: `C:\BOYM\PayWay.Common\PayWay.Common\Scripts\pay_way.sql`, 
+You can use it to modify tax rates
 
 # Solutions and specifications:
 * Use latest .NET Core 2.1 technology, platform independent
